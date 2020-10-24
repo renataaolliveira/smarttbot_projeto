@@ -13,29 +13,35 @@ export default class CryptoList extends React.Component {
         this.componentDidMount = this.componentDidMount.bind(this);
     }
     
-
+    
     componentDidMount() {
+        //Atribuição dos dados ao state
         axios.get(`https://poloniex.com/public?command=returnTicker`).then(response => {
             console.log(response.data);
             this.setState({ crypto: response.data })
             
         
         });
-    }
+        //iteração pelo objeto response.data para atribuir cada key/value de last a um parágrafo
+        function displayData(data) {
+            let output = '';
 
+            for( let info of data) {
+                    output += <p>{data.last}</p>;
+            };
+        }
+
+    }
+    //Como renderizar??????
     render() {
         return (
                 <div>
                 
                     <h3>List of cryptos!</h3>
-                    <ul>
-                        { for (let prop of crypto) {
-                            return (
-                            <li>{ crypto.prop }</li>
-                             ); };
+                    {
                         
-                        {"}"}
-                    </ul>
+                    }
+                    
                 </div>
         )
     }

@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import getLastPrice from './api_function';
 
 
@@ -27,7 +27,12 @@ class FirstComponent extends React.Component {
         return (
             <div>
                 <ul>
-                    {this.state.price.map(coin=>(<li>{coin.last}</li>))}
+                    { for (const key in object) {
+                        if (object.hasOwnProperty(key)) {
+                            const element = object[key];
+                            
+                        }
+                    } }
                 </ul>
             </div>
         );
@@ -36,4 +41,4 @@ class FirstComponent extends React.Component {
 
 };
 
-export default FirstComponent;
+export default FirstComponent; */
