@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import CryptoList from './api';
+//import FirstComponent from './app';
 
 class MyComponentClass extends React.Component {
   render() {

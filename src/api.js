@@ -16,9 +16,9 @@ export default class CryptoList extends React.Component {
 
     componentDidMount() {
         axios.get(`https://poloniex.com/public?command=returnTicker`).then(response => {
-           
-            this.setState({ crypto: [response.data] })
-            console.log(this.state);
+            console.log(response.data);
+            this.setState({ crypto: response.data })
+            
         
         });
     }
@@ -29,8 +29,12 @@ export default class CryptoList extends React.Component {
                 
                     <h3>List of cryptos!</h3>
                     <ul>
-                        {//{this.state.crypto.map(coin=>(<li>{coin.last}</li>))}
-                        }
+                        { for (let prop of crypto) {
+                            return (
+                            <li>{ crypto.prop }</li>
+                             ); };
+                        
+                        {"}"}
                     </ul>
                 </div>
         )
