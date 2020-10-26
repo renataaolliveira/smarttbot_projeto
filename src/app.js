@@ -2,6 +2,7 @@ import React from 'react';
 import getLastPrice from './api_function';
 
 
+
 class FirstComponent extends React.Component {
 
     constructor(props) {
