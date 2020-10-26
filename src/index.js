@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 //import CryptoList from './api';
 import FirstComponent from './app';
+import NavBar from './nav_bar';
 
 class MyComponentClass extends React.Component {
   render() {
@@ -11,6 +12,7 @@ class MyComponentClass extends React.Component {
 
 ReactDOM.render(
 <div>
+  <NavBar />
   <MyComponentClass />
   <FirstComponent />
 </div>
