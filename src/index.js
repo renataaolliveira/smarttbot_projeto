@@ -13,7 +13,7 @@ class MyComponentClass extends React.Component {
 ReactDOM.render(
 <div>
   <NavBar />
-  <MyComponentClass />
+  {/*<MyComponentClass />*/}
   <FirstComponent />
 </div>
 , document.getElementById('root'));

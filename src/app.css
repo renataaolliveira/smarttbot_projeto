@@ -9,9 +9,9 @@
 
   html {
       font-size: 20px;
-      background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: #000000; 
+background: -webkit-linear-gradient(to top, #434343, #000000); 
+background: linear-gradient(to top, #434343, #000000); 
 
       height: 100%;
       width: 100%;
@@ -74,5 +74,41 @@ li {
 }
 
 .analises {
+    left: 30%;
+}
+
+.barra-inferior {
+    background-color: #747474;
+    width: 100%;
+    position: fixed;
+    top: 8%;
+    height: 4.5%;
+}
+
+.inferior {
+    color: whitesmoke;
+    display: inline;
+    top: 8%;
+    position: fixed;
+    margin-top: 0.25%;
+    font-size: 85%;
+}
+
+.cripto {
+    background-color: whitesmoke;
+    vertical-align: center; 
+    color: #747474;   
+}
+
+.lista {
+    left: 10%;
+}
+
+.conversor {
+    left: 22%;
+
+}
+
+.graficos {
     left: 30%;
 }
