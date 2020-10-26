@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CryptoList from './api';
-//import FirstComponent from './app';
+//import CryptoList from './api';
+import FirstComponent from './app';
 
 class MyComponentClass extends React.Component {
   render() {
@@ -12,6 +12,6 @@ class MyComponentClass extends React.Component {
 ReactDOM.render(
 <div>
   <MyComponentClass />
-  <CryptoList />
+  <FirstComponent />
 </div>
 , document.getElementById('root'));

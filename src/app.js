@@ -1,4 +1,4 @@
-/*import React from 'react';
+import React from 'react';
 import getLastPrice from './api_function';
 
 
@@ -7,18 +7,18 @@ class FirstComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            price: [],
+            price: {},
         };
-        //bind the functions here if necessary
+        //bind the functions here if necessary (only if array)
     };
 
     componentDidMount() {
 
-        const resp = getLastPrice;
+        const resp = getLastPrice();
 
         console.log(resp.data);
 
-        this.setState({ price: resp.data })
+        //this.setState({ price: resp.data })
 
     
     }
@@ -27,12 +27,12 @@ class FirstComponent extends React.Component {
         return (
             <div>
                 <ul>
-                    { for (const key in object) {
+                    { /* for (const key in object) {
                         if (object.hasOwnProperty(key)) {
                             const element = object[key];
                             
-                        }
-                    } }
+                        */ }
+                      
                 </ul>
             </div>
         );
@@ -41,4 +41,4 @@ class FirstComponent extends React.Component {
 
 };
 
-export default FirstComponent; */
+export default FirstComponent;
