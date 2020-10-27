@@ -35,21 +35,31 @@ html {
      padding: 3%;
      display: inline-flex;
      margin-left: 8%;
+     text-shadow: 0.5px 0.5px 0.5px; 
+ }
+
+ li:hover {
+     color: #060606;
  }
 
  button {
      float: right;
      width: 85px;
      height: 35px;
-     font-size: 20px;
+     font-size: 18px;
      font-weight: 400;
      color: whitesmoke;
      background-color: #f57300;
      border-color: #fab237;
      border-radius: 5%;
      margin: 0.5% 1% 0 0.5%;
+     transition-duration: 0.2s;
+     box-shadow: 0 1px 3px #fab237;
  }
 
+ button:hover {
+    background-color: #fab237;
+ }
  .parent-ul {
      display: inline-flex;
      align-items: center;

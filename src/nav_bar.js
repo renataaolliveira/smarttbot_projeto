@@ -17,10 +17,10 @@ export const NavBar = () => {
                 <nav className='nav'>
                         <ul className='parent-ul'>
                             <li className='home'>Home</li>
-                            <li className='moedas'>Moedas</li>
-                            <li className='wiki'>WikiCripto</li>
-                            <li className='noticias'>Notícias</li>
-                            <li className='analises'>Análises</li>
+                            <li>Moedas</li>
+                            <li>WikiCripto</li>
+                            <li>Notícias</li>
+                            <li>Análises</li>
                         </ul>
                         <button className='login-button'>Log In</button>
                         <button className='signin-button'>Sign In</button>
