@@ -7,6 +7,68 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #000000; 
+background: -webkit-linear-gradient(to top, #434343, #000000); 
+background: linear-gradient(to top, #434343, #000000);
+    height: 100%;
+    width: 100%; 
+}
+
+ nav {
+     background-color: #060606;
+     font-family: 'Roboto', sans-serif;
+     font-size: 20px;
+     width: 100%;
+     
+
+ }
+
+ li {
+     color: whitesmoke;
+     padding: 3%;
+     display: inline-flex;
+
+ }
+ button {
+     float: right;
+     left: 80%;
+     width: 90px;
+     height: 40px;
+     font-family: 'Roboto', sans-serif;
+     font-size: 20px;
+     font-weight: 600;
+     color: whitesmoke;
+     background-color: #f57300;
+     border-color: #fab237;
+     border-radius: 5%;
+ }
+
+ .parent-ul {
+     display: inline-flex;
+     align-items: center;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+  /** {
+    box-sizing: border-box;
+}
   html {
       font-size: 20px;
       background: #000000; 
@@ -18,10 +80,10 @@ background: linear-gradient(to top, #434343, #000000);
   }
 /* Navigation Bar stying */
 
-nav {
+/*nav {
     position: fixed;
     width: 100%;
-    height: 8%;
+    height: 12%;
     background-color: #060606;
     top: 0;
     left: 0;
@@ -36,7 +98,6 @@ li {
     font-weight: 600;
     font-size: 0.9rem;
     padding: 7px;
-    position: fixed;
     top: 2.5%
 }
 
@@ -62,7 +123,6 @@ li {
     position: fixed;
     left: 92%;
     top: 2.5%;
-
 }
 
 .wiki {
@@ -82,33 +142,34 @@ li {
     width: 100%;
     position: fixed;
     top: 8%;
-    height: 4.5%;
+    height: 8%;
+    min-height: 5%;
 }
 
 .inferior {
     color: whitesmoke;
     display: inline;
     top: 8%;
-    position: fixed;
     margin-top: 0.25%;
     font-size: 85%;
 }
 
 .cripto {
-    background-color: whitesmoke;
-    vertical-align: center; 
+    background-color: whitesmoke; 
     color: #747474;   
 }
 
 .lista {
     left: 10%;
+    margin: 0 10% 0 10%;
 }
 
 .conversor {
     left: 22%;
-
+    margin: 0 20% 0 20%;
 }
 
 .graficos {
     left: 30%;
-}
+    margin: 0 20% 0 25%;
+}*/
