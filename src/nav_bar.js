@@ -33,18 +33,17 @@ export const NavBar = () => {
 
 };
 
-class HiddenNavBar extends React.Component {
+export class HiddenNavBar extends React.Component {
     render() {
         return (
             <div className='barra-inferior'> 
                 
                         <ul>
-                            <li className='inferior cripto'>Criptomoedas:</li>
                             <li className='inferior lista'>Lista de Criptomoedas</li>
                             <li className='inferior conversor'>Conversor</li>
                             <li className='inferior graficos'>Gráficos</li>
                         </ul>
-                </div>  
+            </div>  
         )
     }
 }
