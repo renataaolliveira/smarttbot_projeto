@@ -18,7 +18,7 @@ export const NavBar = () => {
                         <ul className='parent-ul'>
                             <li className='home'>Home</li>
                             <li className='moedas'> Moedas</li>
-                            <li className='wiki'><a href="src\paginas extras\wikicripto.html"></a> WikiCripto</li>
+                            <li className='wiki'> WikiCripto</li>
                             <li className='noticias'>Notícias</li>
                             <li className='analises'>Análises</li>
                             <li className='end'><button className='login-button'>Log In</button></li>
