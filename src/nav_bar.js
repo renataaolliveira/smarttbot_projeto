@@ -17,8 +17,8 @@ export const NavBar = () => {
                 <nav className='nav'>
                         <ul className='parent-ul'>
                             <li className='home'>Home</li>
-                            <li className='moedas'> Moedas</li>
-                            <li className='wiki'> WikiCripto</li>
+                            <li className='moedas'>Moedas</li>
+                            <li className='wiki'>WikiCripto</li>
                             <li className='noticias'>Notícias</li>
                             <li className='analises'>Análises</li>
                         </ul>
