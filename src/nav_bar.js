@@ -21,12 +21,12 @@ export const NavBar = () => {
                             <li className='wiki'> WikiCripto</li>
                             <li className='noticias'>Notícias</li>
                             <li className='analises'>Análises</li>
-                            <li className='end'><button className='login-button'>Log In</button></li>
-                            <li className='end'><button className='signin-button'>Sign In</button></li>
                         </ul>
-                     
+                        <button className='login-button'>Log In</button>
+                        <button className='signin-button'>Sign In</button>
+                        
                 </nav>
-                    
+                <div className='barra-laranja'></div>    
                 
             </div>
         );
