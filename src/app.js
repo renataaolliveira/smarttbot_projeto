@@ -1,5 +1,5 @@
 import React from 'react';
-import getLastPrice from './api_function';
+import { getLastPrice, getDailyVolume, getCurrenciesInfo } from './api_function';
 
 
 
@@ -15,9 +15,19 @@ class FirstComponent extends React.Component {
 
     componentDidMount() {
 
-        const resp = getLastPrice();
+        const respPrice = getLastPrice();
 
-        console.log(resp.data);
+        console.log(respPrice.data);
+
+        const respVolume = getDailyVolume();
+
+        console.log(respVolume.data);
+
+        const respInfo = getCurrenciesInfo();
+
+        console.log(respInfo.data);
+
+
 
         //this.setState({ price: resp.data })
 
