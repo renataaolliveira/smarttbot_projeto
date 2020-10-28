@@ -38,7 +38,8 @@ class FirstComponent extends React.Component {
 
 
 
-        //this.setState({ price: resp.data })
+    // O for iria iterar sobre os propriedades do objeto que resultou do consumo da api no arquivo api_function. Entretanto, houve dificuldades em fazer essa iteração pois o objeto retornado tinha uma série de objetos dentro com propriedades únicas corespondentes aos nomes das moedas.
+    // Ao usar .json(), estava retornando undefined.
 
     
     }
@@ -46,16 +47,7 @@ class FirstComponent extends React.Component {
     // O método render vai gerar o código JSX que será inserido no arquivo tabela_dados
     render() {
         return (
-            <div>
-                <ul>
-                    { /* for (const key in object) {
-                        if (object.hasOwnProperty(key)) {
-                            const element = object[key];
-                            
-                        */ }
-                      
-                </ul>
-            </div>
+            <td>{}</td>
         );
     };
     
