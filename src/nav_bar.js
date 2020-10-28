@@ -1,20 +1,28 @@
+// Este arquivo é responsável por gerar o HTML na barra de navegação. Foi separado como um componente à parte para que ficasse mais fácil de estilizar usando o CSS.
+
 import React, { useState } from 'react';
 import './app.css';
 
 export const NavBar = () => {
     
-    //this.state = { isShowing: false }
+    //Esta função foi uma tentativa de criar um eventHandler que seria acionado onClick sobre o elemento 'Moedas'. Quando o usuário clica em 'Moedas', uma segunda barra de navegação se torna disponível logo abaixo da barra de navegação inicial.
+    // Quando defini a função usando o destructing assignment, o isShowing não acusou nenhum valor, mesmo eu tendo passando false como argumento. 
+    //Tentei atribuir um valor através do this.state, mas também não deu certo. Deve ter faltado algum detalhezinho.
+    // O código elaborado para atribuir o eventHandler ao evento está logo abaixo e seria adicionado ao elemento <li>Moedas</li>
 
-    //Esta função é um eventHandler que será acionado onClick sobre o elemento 'Moedas'. Quando o usuário clica em 'Moedas', uma segunda barra de navegação se torna disponível logo abaixo da barra de navegação inicial.
     /*const ShowNavMoedas = () => {
         const[isShowing, setIsShowing] = useState(false);
         function onClick() {
             setIsShowing(true);
-    }*/
+    }
+    this.state = { isShowing: false }
+
+    onClick={onClick}> { isShowing ? <HiddenNavBar /> : "" }
+    */
 
         return (
             <div>
-                <nav className='nav'>
+                <nav>
                         <ul className='parent-ul'>
                             <li className='home'>Home</li>
                             <li>Moedas</li>
@@ -33,8 +41,9 @@ export const NavBar = () => {
 
 };
 
-export class HiddenNavBar extends React.Component {
-    render() {
+// Esta função é responsável por gerar o HTML da "barra secundária" de navegação. Foi separada da barra "primária" de navegação para facilitar a visualização
+
+export const HiddenNavBar = () => {
         return (
             <div className='barra-inferior'> 
                 
@@ -45,7 +54,4 @@ export class HiddenNavBar extends React.Component {
                         </ul>
             </div>  
         )
-    }
-}
-
-/*onClick={onClick}> { isShowing ? <HiddenNavBar /> : "" }*/
+};

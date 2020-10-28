@@ -1,7 +1,8 @@
+// Neste arquivo está sendo utilizada a biblioteca axios para consumir dados de APIs.
 import axios from 'axios';
 
-// Neste arquivo está sendo utilizada a biblioteca axios para consumir dados de APIs.
-// Foi usada uma função async-await disponível na documentação da Axios, que será chamada no arquivo XXX para acessar os dados das APIs.
+
+// Foi usada uma função async-await disponível na documentação da Axios, que será chamada no arquivo app.js para acessar os dados das APIs.
 
 //Esta função será responsável por disponibilizar os dados de preço de cada moeda, a variação percentual do preço, o volume vendido nas últimas 24 horas
 async function getLastPrice() {
