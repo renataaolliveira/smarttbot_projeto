@@ -108,14 +108,6 @@ th, td {
 th {
     background-color: #cfcfcf;
 }
-/* muda a cor quando passa o mouse não está funcionando */
-tr:hover {
-    background-color: black;
-}
-/* coloca a tabela zebrada verificar */ 
-tr:nth-child(even) {
-    background-color: #ffffff;
-}
 
 .container {
     height: 100%;
